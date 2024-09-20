@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState } from 'react' // eslint-disable-line
 import { ShopContext } from '../context/ShopContext'
 import Title from './Title.jsx'
 import { useEffect } from 'react';
 import ProductItem from './ProductItem.jsx';
+
 const LatestCollection = () => {
 
     const { products } = useContext(ShopContext);
@@ -10,6 +11,7 @@ const LatestCollection = () => {
 
     useEffect(() => { 
         setLatestProducts(products.slice(0,10));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     return (
@@ -17,7 +19,7 @@ const LatestCollection = () => {
             <div className='text-center py-8 text-3xl'>
                 <Title text1={'LATEST'} text2={'COLLECTION'} />
                 <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-                     Discover the latest products in our store. We're constantly adding new items to our collection, so be sure to check back often!
+                     Discover the latest products in our store. We&#39;re constantly adding new items to our collection, so be sure to check back often!
                 </p>
             </div>
             
