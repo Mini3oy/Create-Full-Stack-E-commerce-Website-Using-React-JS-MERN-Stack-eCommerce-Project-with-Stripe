@@ -16,7 +16,7 @@ const LatestCollection = () => {
 
     return (
         <div className='my-10'>
-            <div className='text-center py-8 text-3xl'>
+            <div className='text-center text-3xl py-8'>
                 <Title text1={'LATEST'} text2={'COLLECTION'} />
                 <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
                      Discover the latest products in our store. We&#39;re constantly adding new items to our collection, so be sure to check back often!
@@ -27,7 +27,7 @@ const LatestCollection = () => {
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'> 
                 {
                     latestProducts.map((item, index) => (
-                        <ProductItem key={ index} id={item._id} image={item.image} name={item.name} price={item.price} />
+                        <ProductItem key={ index} id={item._id} image={item.image[0]} name={item.name} price={item.price} />
                     ))
                 }
             </div>

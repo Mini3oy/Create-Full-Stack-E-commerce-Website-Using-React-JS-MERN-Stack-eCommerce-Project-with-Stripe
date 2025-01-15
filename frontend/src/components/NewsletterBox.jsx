@@ -8,7 +8,7 @@ const NewsletterBox = () => {
     }
   return (
       <div className='text-center'>
-          <p className='text-2xl font-medium text-gray-800'>Subscribe now & get 20 % off</p>
+          <p className='max-[400px]:text-xl text-2xl font-medium text-gray-800'>Subscribe now & get 20 % off</p>
           <p className=' text-gray-400 mt-3'>
               Stay informed about our latest news, updates, and offers. Enter your email address below to receive our newsletter.
           </p>
